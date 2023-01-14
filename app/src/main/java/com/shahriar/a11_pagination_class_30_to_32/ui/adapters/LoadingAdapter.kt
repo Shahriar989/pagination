@@ -10,7 +10,7 @@ import com.shahriar.a11_pagination_class_30_to_32.databinding.ItemProgressBindin
 
 class LoadingAdapter : LoadStateAdapter<LoadingAdapter.LoadViewHolder>() {
 
-    inner class LoadViewHolder(val binding: ItemProgressBinding) :
+    inner class LoadViewHolder(private val binding: ItemProgressBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bindState(loadState: LoadState) {
 
